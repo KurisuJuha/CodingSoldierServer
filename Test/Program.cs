@@ -4,8 +4,6 @@ namespace Test
 {
     public class Program
     {
-        public int i;
-
         static void Main(string[] args)
         {
             Program program = new Program();
@@ -22,9 +20,7 @@ namespace Test
 
         public void Update()
         {
-            Console.WriteLine("update" + i);
-
-            i++;
+            Console.WriteLine(Server.Soldiers[0].ToString() + "," + Server.Enemies[0].ToString());
         }
     }
 }
